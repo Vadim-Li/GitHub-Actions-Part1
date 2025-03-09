@@ -1,13 +1,6 @@
 import unittest
 from app import add, subtract
 
-def test_add():
-    assert add(2, 3) == 5
-
-def test_subtract():
-    assert subtract(5, 3) == 2
-
-
 class TestApp(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(2, 3), 5)
